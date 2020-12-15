@@ -2,9 +2,9 @@ FROM golang
 
 COPY . .
 
-ENV Sandy=$PWD
+ENV GOPATH=$PWD
 
-ENV GOBIN=$Sandy/bin
+ENV GOBIN=$GOPATH/bin
 
 ENV REDIS_HOST="redis"
 
